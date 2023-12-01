@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import About from "./pages/About";
 import Features from "./pages/Features";
 import Home from "./pages/Home";
 import TodaySpecials from "./pages/TodaySpecials";
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <TodaySpecials />
       <Features />
+      <About />
     </>
   );
 }

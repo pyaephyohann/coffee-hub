@@ -23,3 +23,26 @@ export const todaySpecialDatas = [
     src: "https://i.pinimg.com/564x/bc/bb/e6/bcbbe69fd3e363537ee0acaef0128e6c.jpg",
   },
 ];
+
+export const aboutDatas = [
+  {
+    name: "Supreme Beans",
+    description: "Beans that provides greate taste",
+    src: "../assets/beans.png",
+  },
+  {
+    name: "High Quality",
+    description: "We provide the highest quality",
+    src: "../assets/medal.png",
+  },
+  {
+    name: "Extraordinary",
+    description: "Coffee like you have never tasted",
+    src: "../assets/coffee.png",
+  },
+  {
+    name: "Affordable",
+    description: "Our coffee prices are easy to afford",
+    src: "../assets/price.png",
+  },
+];
