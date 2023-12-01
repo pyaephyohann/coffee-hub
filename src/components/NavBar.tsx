@@ -15,7 +15,7 @@ const NavBar = () => {
           open ? "block" : "hidden"
         }`}
       ></div>
-      <nav className="py-4 px-6 border-b shadow-md fixed top-0 right-0 left-0">
+      <nav className="py-4 px-6 border-b shadow-md fixed top-0 right-0 left-0 bg-white">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-28">
             {/* logo and name */}
@@ -36,7 +36,7 @@ const NavBar = () => {
           </div>
           {/* make coffee */}
 
-          <button className="text-md md:text-lg bg-secondary text-white py-2 px-4 rounded-md hidden md:block">
+          <button className="text-md md:text-lg bg-primary text-white py-2 px-4 rounded-md hidden md:block hover:bg-tartiary">
             Make Coffee
           </button>
 

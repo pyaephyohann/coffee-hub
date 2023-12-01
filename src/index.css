@@ -11,3 +11,11 @@ body {
 nav {
   z-index: 99 !important;
 }
+
+.gradientBg {
+  background: linear-gradient(99deg, #fac06a, #60380a 100%);
+}
+
+.button {
+  @apply bg-primary text-white rounded-md px-4 py-2 hover:bg-tartiary;
+}

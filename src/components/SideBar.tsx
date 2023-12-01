@@ -13,7 +13,7 @@ const SideBar = ({ open, setOpen }: Props) => {
       className={`
       ${
         open ? "w-[60%] px-4 py-4" : "w-0"
-      } transition-all duration-500 ease-in-out fixed right-0 top-0 h-screen bg-secondary text-white z-[9999]`}
+      } transition-all duration-500 ease-in-out fixed right-0 top-0 h-screen bg-primary text-white z-[9999]`}
     >
       {/* top bar */}
       <div className="flex items-center justify-between">
@@ -37,7 +37,7 @@ const SideBar = ({ open, setOpen }: Props) => {
             );
           })}
         </ul>
-        <button className="text-md md:text-lg bg-pink text-white py-2 px-4 rounded-md mt-10">
+        <button className="text-md md:text-lg bg-secondary text-white py-2 px-4 rounded-md mt-10">
           Make Coffee
         </button>
       </div>
