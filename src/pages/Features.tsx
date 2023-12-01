@@ -1,11 +1,19 @@
 import morning from "../assets/morning.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Features = () => {
   return (
-    <div className="md:px-12 p-4">
+    <div className="md:px-12 p-4" id="features">
       {/* left side */}
       <div className="md:flex items-center">
-        <div className="md:w-[50%]">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="md:w-[50%]"
+        >
           <h1 className="text-4xl md:text-6xl font-bold text-primary">
             Discover the best coffee
           </h1>
@@ -17,21 +25,39 @@ const Features = () => {
             others you have ever tasted.
           </p>
           <button className="button">Learn More</button>
-        </div>
-        <div className="md:w-[50%] mt-[2.5rem] md:mt-0">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="md:w-[50%] mt-[2.5rem] md:mt-0"
+        >
           <img
             className="h-[20rem] mx-auto rounded-xl"
             src="https://i.pinimg.com/564x/22/5f/cc/225fccc9400c7040b66cf5796377f2cb.jpg"
             alt="coffee"
           />
-        </div>
+        </motion.div>
       </div>
       {/* right side */}
       <div className="mt-[4rem] md:flex items-center">
-        <div className="md:w-[50%]">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="md:w-[50%]"
+        >
           <img src={morning} alt="morning" />
-        </div>
-        <div className="md:w-[50%] mt-[2.5rem] md:mt-0">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="md:w-[50%] mt-[2.5rem] md:mt-0"
+        >
           <h1 className="text-4xl md:text-5xl font-bold text-primary">
             Get a chance to have an Amazing morning
           </h1>
@@ -40,7 +66,7 @@ const Features = () => {
             with coffee
           </p>
           <button className="button">Order Now</button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

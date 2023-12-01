@@ -3,7 +3,10 @@ import { todaySpecialDatas } from "../datas";
 
 const TodaySpecials = () => {
   return (
-    <div className="px-[1rem] lg:px-[4rem] my-[3.5rem]">
+    <div
+      className="px-[1rem] pt-[1rem] lg:px-[4rem] my-[3.5rem]"
+      id="todaySpecials"
+    >
       <h1 className="text-center text-4xl md:text-5xl font-bold mb-[3rem]">
         Today's Specials
       </h1>

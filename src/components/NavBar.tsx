@@ -3,6 +3,7 @@ import { navBarItems } from "../datas";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import SideBar from "./SideBar";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -27,9 +28,17 @@ const NavBar = () => {
             <ul className="space-x-16 hidden md:block">
               {navBarItems.map((item, index) => {
                 return (
-                  <a className="text-lg font-bold" href={item.path} key={index}>
+                  <Link
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    activeClass="active"
+                    className="text-lg font-bold cursor-pointer"
+                    to={item.path}
+                    key={index}
+                  >
                     {item.name}
-                  </a>
+                  </Link>
                 );
               })}
             </ul>

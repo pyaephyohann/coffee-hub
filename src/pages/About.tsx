@@ -2,19 +2,27 @@ import beans from "../assets/beans.png";
 import medal from "../assets/medal.png";
 import coffee from "../assets/coffee.png";
 import price from "../assets/price.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const About = () => {
   return (
-    <div className="md:px-12 p-4 my-[3.5rem]">
+    <div className="md:px-12 p-4 my-[3.5rem]" id="about">
       {/* text */}
-      <div className="text-center">
+      <motion.div
+        variants={fadeIn("down", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-center"
+      >
         <h1 className="text-3xl md:text-4xl font-bold text-primary">
           Why are we different?
         </h1>
         <p className="text-lg md:text-xl text-tartiary mt-[1rem] font-semibold ">
           We don't just make your coffee, we make your day!
         </p>
-      </div>
+      </motion.div>
       {/* cards */}
       <div className="mt-[3rem] flex flex-wrap justify-center items-center md:justify-between">
         <div className="bg-[rgba(255, 255, 255, 0.04)] shadow-3xl px-[1rem] py-[2.5rem] rounded-[35px] hover:-translate-y-6 transition-all duration-300 cursor-pointer m-[1rem]">

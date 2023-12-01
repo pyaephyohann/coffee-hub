@@ -1,6 +1,7 @@
 import logo from "../assets/logo.png";
 import { FaXmark } from "react-icons/fa6";
 import { navBarItems } from "../datas";
+import { Link } from "react-scroll";
 
 interface Props {
   open: boolean;
@@ -31,9 +32,17 @@ const SideBar = ({ open, setOpen }: Props) => {
         <ul className="flex flex-col space-y-6">
           {navBarItems.map((item, index) => {
             return (
-              <a className="text-xl" href={item.path}>
+              <Link
+                onClick={() => setOpen(false)}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                activeClass="active"
+                className="text-xl cursor-pointer"
+                to={item.path}
+              >
                 {item.name}
-              </a>
+              </Link>
             );
           })}
         </ul>
