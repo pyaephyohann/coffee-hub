@@ -8,7 +8,7 @@ const About = () => {
     <div className="md:px-12 p-4 my-[3.5rem]">
       {/* text */}
       <div className="text-center">
-        <h1 className="text-2xl md:text-4xl font-bold text-primary">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary">
           Why are we different?
         </h1>
         <p className="text-lg md:text-xl text-tartiary mt-[1rem] font-semibold ">
@@ -16,8 +16,8 @@ const About = () => {
         </p>
       </div>
       {/* cards */}
-      <div className="mt-[3.5rem] md:flex items-center justify-between">
-        <div className="bg-[rgba(255, 255, 255, 0.04)] shadow-3xl px-[1rem] py-[2.5rem] rounded-[35px] hover:-translate-y-6 transition-all duration-300 cursor-pointer">
+      <div className="mt-[3rem] flex flex-wrap justify-center items-center md:justify-between">
+        <div className="bg-[rgba(255, 255, 255, 0.04)] shadow-3xl px-[1rem] py-[2.5rem] rounded-[35px] hover:-translate-y-6 transition-all duration-300 cursor-pointer m-[1rem]">
           <img className="h-[8rem] mx-auto" src={beans} alt="beans" />
           <h3 className="text-2xl font-bold text-center text-primary">
             Supreme Beans
@@ -26,7 +26,7 @@ const About = () => {
             Beans that provides greate taste
           </p>
         </div>
-        <div className="bg-[rgba(255, 255, 255, 0.04)] shadow-3xl px-[1rem] py-[2.5rem] rounded-[35px] hover:-translate-y-6 transition-all duration-300 cursor-pointer">
+        <div className="bg-[rgba(255, 255, 255, 0.04)] shadow-3xl px-[1rem] py-[2.5rem] rounded-[35px] hover:-translate-y-6 transition-all duration-300 cursor-pointer m-[1rem]">
           <img className="h-[8rem] mx-auto" src={medal} alt="beans" />
           <h3 className="text-2xl font-bold text-center text-primary mt-[0.5rem]">
             High Quality
@@ -35,7 +35,7 @@ const About = () => {
             We provide the highest quality
           </p>
         </div>
-        <div className="bg-[rgba(255, 255, 255, 0.04)] shadow-3xl px-[1rem] py-[2.5rem] rounded-[35px] hover:-translate-y-6 transition-all duration-300 cursor-pointer">
+        <div className="bg-[rgba(255, 255, 255, 0.04)] shadow-3xl px-[1rem] py-[2.5rem] rounded-[35px] hover:-translate-y-6 transition-all duration-300 cursor-pointer m-[1rem]">
           <img className="h-[8rem] mx-auto" src={coffee} alt="beans" />
           <h3 className="text-2xl font-bold text-center text-primary mt-[1.5rem]">
             Extraordinary
@@ -44,7 +44,7 @@ const About = () => {
             Coffee like you have never tasted
           </p>
         </div>
-        <div className="bg-[rgba(255, 255, 255, 0.04)] shadow-3xl px-[1rem] py-[2.5rem] rounded-[35px] hover:-translate-y-6 transition-all duration-300 cursor-pointer">
+        <div className="bg-[rgba(255, 255, 255, 0.04)] shadow-3xl px-[1rem] py-[2.5rem] rounded-[35px] hover:-translate-y-6 transition-all duration-300 cursor-pointer m-[1rem]">
           <img className="h-[8rem] mx-auto" src={price} alt="beans" />
           <h3 className="text-2xl font-bold text-center text-primary mt-[0.5rem]">
             Affordable

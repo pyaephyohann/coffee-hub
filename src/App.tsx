@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import About from "./pages/About";
 import Features from "./pages/Features";
@@ -12,6 +13,7 @@ function App() {
       <TodaySpecials />
       <Features />
       <About />
+      <Footer />
     </>
   );
 }
