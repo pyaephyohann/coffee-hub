@@ -4,7 +4,7 @@ import { todaySpecialDatas } from "../datas";
 const TodaySpecials = () => {
   return (
     <div className="px-[1rem] lg:px-[4rem] my-[3.5rem]">
-      <h1 className="text-center text-5xl font-bold mb-[3rem]">
+      <h1 className="text-center text-4xl md:text-5xl font-bold mb-[3rem]">
         Today's Specials
       </h1>
       <Marquee
@@ -19,7 +19,7 @@ const TodaySpecials = () => {
           return (
             <div className="m-[1rem]" key={index}>
               <img
-                className="rounded-lg h-[15rem]"
+                className="rounded-lg h-[10rem] lg:h-[15rem]"
                 src={item.src}
                 alt={item.name}
               />
